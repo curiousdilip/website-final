@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "classnames": "^2.5.1",
+    "next": "14.2.15",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.15"
+    "sass": "^1.79.5",
+    "swiper": "^11.1.14"
   }
 }

@@ -1,4 +1,5 @@
 import "./globals.scss";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 
@@ -38,7 +39,6 @@ export const metadata = {
   },
 };
 
-
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
@@ -49,34 +49,34 @@ const inter = Inter({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable}`}>
-
       <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "http://schema.org",
             "@type": "Organization",
-            "url": "https://www.dilipmaurya.in/",
-            "name": "Dilip Kumar | Frontend Web Developer",
-            "logo": "https://www.dilipmaurya.in/img/logo.svg",
-            "description": "Hi my name is Dilip Kumar Maurya and I am a Frontend Web developer based in New Delhi, India.",
-            "contactPoint": {
+            url: "https://www.dilipmaurya.in/",
+            name: "Dilip Kumar | Frontend Web Developer",
+            logo: "https://www.dilipmaurya.in/img/logo.svg",
+            description:
+              "Hi my name is Dilip Kumar Maurya and I am a Frontend Web developer based in New Delhi, India.",
+            contactPoint: {
               "@type": "ContactPoint",
-              "telephone": "+91 98997 42615",
-              "contactType": "customer service"
+              telephone: "+91 98997 42615",
+              contactType: "customer service",
             },
-            "sameAs": [
+            sameAs: [
               "https://www.facebook.com/curiousdilip",
               "https://twitter.com/curiousdilip",
               "https://www.github.com/curiousdilip",
               "https://www.linkedin.com/in/curiousdilip/",
-            ]
-          })
+            ],
+          }),
         }}
-      > </Script>
-      <body>
-        {children}
-      </body>
+      >
+        {" "}
+      </Script>
+      <body>{children}</body>
     </html>
   );
 }

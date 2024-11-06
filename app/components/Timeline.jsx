@@ -1,0 +1,21 @@
+import React from 'react'
+import { timeline } from '../data'
+import "./timeline.scss"
+const TimeLine = () => {
+    return (
+        <div>
+            <ul className='timeline'>
+
+                {timeline.map((item, index) => (
+                    <li key={index} >
+                        <h5 className='day'> {item.day}</h5>
+                        <p>{item.description} <a href={item.link} target='_blank'>{
+                            item.projectName}</a></p>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    )
+}
+
+export default TimeLine

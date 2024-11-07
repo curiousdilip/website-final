@@ -19,16 +19,16 @@ export default function Home() {
             </p>
             <ul>
               <li>
-                <Link href="/">What I have Built?</Link>
+                <Link href="/work">What I have Built?</Link>
               </li>{" "}
               <li>
-                <Link href="/">More about myself</Link>
+                <Link href="/about">More about myself</Link>
               </li>{" "}
               <li>
-                <Link href="/">My Latest Resume</Link>
+                <Link href="/resume">My Latest Resume</Link>
               </li>{" "}
               <li>
-                <Link href="/">Contact Me</Link>
+                <Link href="/contact">Contact Me</Link>
               </li>
             </ul>
           </div>

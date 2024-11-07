@@ -1,0 +1,23 @@
+footer{
+    position: relative;
+    margin-top: 22vh;
+   .container{
+    padding-inline: 1.5rem;
+    max-width: 1280px;
+    margin-inline: auto;
+    text-align: center;   margin-top: 40px;
+    .copyright {
+        margin-top: 20px;
+        margin-bottom: 40px
+    }
+    .follow-me {
+        a {
+            font-size: 20px;
+            margin-right: 20px;
+            text-decoration: none;
+            color: #000
+        }
+    }
+   }
+}
+

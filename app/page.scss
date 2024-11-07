@@ -1,0 +1,28 @@
+#hero{
+    .container{
+        .info{
+            p{
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 18px;
+  color: var(color2);
+  font-weight: 300;
+}
+            ul{
+                list-style-type: none;
+              margin-top: 20px;
+                li{
+                line-height: 1.6;
+                font-size: 18px;
+                color: var(color2);
+                font-weight: 300;
+                }
+              }
+              
+              a{
+                text-decoration: none;
+                color: var(--color2);
+              }
+        }
+    }
+}

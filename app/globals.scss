@@ -3,3 +3,35 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --color1: #FFF;
+  --color2: #181818;
+}
+.container
+{
+  padding-inline: 1.5rem;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-block: 140px 180px;
+  @media (max-width:768px) {
+    padding: 1.5rem;
+  }
+}
+h1{
+  font-size: 52px;
+  font-weight: 300;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+// p{
+//   text-rendering: optimizeSpeed;
+//   line-height: 1.6;
+//   font-size: 18px;
+//   color: var(color2);
+//   font-weight: 300;
+// }
+

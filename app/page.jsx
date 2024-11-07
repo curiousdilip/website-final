@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import "./page.scss"
 export default function Home() {
   return (
     <>
@@ -19,16 +19,16 @@ export default function Home() {
             </p>
             <ul>
               <li>
-                <Link href="/work">What I have Built?</Link>
+                <Link href="/work"><i className="bi bi-laptop"></i> What I have Built?</Link>
               </li>{" "}
               <li>
-                <Link href="/about">More about myself</Link>
+                <Link href="/about"><i className="bi bi-person-vcard"></i> More about myself</Link>
               </li>{" "}
               <li>
-                <Link href="/resume">My Latest Resume</Link>
+                <Link href="/resume"><i className="bi bi-file-earmark-text"></i> My Latest Resume</Link>
               </li>{" "}
               <li>
-                <Link href="/contact">Contact Me</Link>
+                <Link href="/contact"><i className="bi bi-telephone"></i> Contact Me</Link>
               </li>
             </ul>
           </div>

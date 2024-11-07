@@ -2,7 +2,7 @@ import "./footer.scss"
 export default function Footer() {
   return <>
     <footer>
-      <div className="container">
+      <div className="footer">
         <div className="follow-me">
           <a aria-label="Github" href="https://github.com/curiousdilip"> <i className="bi bi-github"> </i></a>
           <a aria-label="Twitter" href="https://twitter.com/curiousdilip"> <i className="bi bi-twitter-x"> </i></a>

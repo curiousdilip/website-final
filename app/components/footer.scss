@@ -1,14 +1,15 @@
 footer{
     position: relative;
-    margin-top: 22vh;
-   .container{
-    padding-inline: 1.5rem;
-    max-width: 1280px;
-    margin-inline: auto;
-    text-align: center;   margin-top: 40px;
+    // margin-top: 22vh;
+   .footer{
+
+    text-align: center;  
     .copyright {
         margin-top: 20px;
-        margin-bottom: 40px
+        margin-bottom: 40px;
+        h4{
+            font-weight: 400;
+        }
     }
     .follow-me {
         a {

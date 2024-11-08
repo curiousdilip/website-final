@@ -1,3 +1,4 @@
 export default function ErrorPage() {
-  return <></>;
+  return <>
+  <h1>app kho gye hain</h1></>;
 }

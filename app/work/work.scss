@@ -1,0 +1,119 @@
+#work {
+    .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        .work-heading {
+            font-size: 48px;
+            line-height: 50px;
+            color: var(--color1);
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+            @media (max-width:768px) {
+                grid-template-columns: auto;
+            }
+            .project {
+                border: 1px solid var(--color1);
+                padding: 10px;
+                border-radius: 5px;
+                img {
+                    object-fit: cover;
+                }
+
+                .details {
+                    .p-title {
+                        font-size: 20px;
+                        padding: 10px 0;
+                    }
+
+                    .description {
+                        font-size: 14px;
+                    }
+
+                    .tech-stack {
+                        padding: 10px 0;
+                        display: flex;
+                        list-style: none;
+                        gap: 10px;
+
+                        li {
+                            font-size: 10px;
+                            padding: 5px;
+                            border: .5px solid var(--color1);
+                        }
+                    }
+
+                    .p-link {
+                        font-size: 14px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+  }
+}
+
+#project-detail {
+
+
+    .project-title {
+        font-size: 48px;
+        line-height: 50px;
+        color: var(--color1);
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    .project-description {
+        text-rendering: optimizeSpeed;
+        line-height: 1.6;
+        font-size: 18px;
+        color: var(color2);
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+
+    .tech-stack {
+        padding: 10px 0;
+        display: flex;
+        list-style: none;
+        margin-bottom: 20px;
+        gap: 10px;
+
+        li {
+            padding: 10px;
+            border-radius: 10px;
+            border: .5px solid var(--color1);
+        }
+    }
+
+    .job {
+        text-rendering: optimizeSpeed;
+        line-height: 1.6;
+        font-size: 18px;
+        color: var(color2);
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+
+    .time {
+        text-rendering: optimizeSpeed;
+        line-height: 1.6;
+        font-size: 18px;
+        color: var(color2);
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+
+    .project-link {
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+
+    }
+}

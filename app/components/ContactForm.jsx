@@ -1,80 +1,95 @@
 "use client";
 import React, { useState } from "react";
+import "./contact-form.scss";
 
 const ContactForm = ({ onFormSubmit }) => {
-    const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
-    const handleSubmit = async (event) => {
-        event.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
-        try {
-            const response = await fetch(
-                "https://script.google.com/macros/s/AKfycbyLgS0NuKwRbDWDoFgz2FROEOQk6Tc3D-9uxazp4EQct-ENewCyfyRNkmZdB9sdadRZ/exec",
-                {
-                    method: "POST",
-                    body: new FormData(event.target),
-                },
-            );
-
-            if (response.ok) {
-                setFormSubmitted(true);
-                window.alert("Thank You! \n Form submitted successfully!");
-                setTimeout(() => {
-                    setFormSubmitted(false);
-                }, 2000);
-                // Call the parent component's onFormSubmit function if provided
-                if (onFormSubmit) {
-                    onFormSubmit();
-                }
-            } else {
-                console.error("Form submission failed.");
-            }
-        } catch (error) {
-            console.error("Network error:", error);
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbzZYU62fT3NxS5aPtI7wpKdJAYXd6Jb41ziHshVvkqpIOz5rByy60NbJZLR6Q2LDzh1zA/exec",
+        {
+          method: "POST",
+          body: new FormData(event.target),
         }
-    };
+      );
 
-    return (
-        <>
-            {!formSubmitted ? (
-                <form onSubmit={handleSubmit}>
-                    <input
-                        type="name"
-                        name="name"
-                        className="form-control mb-3"
-                        placeholder="Name"
-                        required
-                    />
-                    <input
-                        type="email"
-                        name="email"
-                        className="form-control mb-3"
-                        placeholder="Email"
-                        required
-                    />
-                    <input
-                        type="tel"
-                        name="phone"
-                        className="form-control mb-3"
-                        placeholder="Phone number"
-                        required
-                    />
-                    <textarea
-                        name="message"
-                        className="form-control mb-3"
-                        rows="3"
-                        placeholder="Your Message"
-                    ></textarea>
+      if (response.ok) {
+        setFormSubmitted(true);
+        window.alert("Thank You! \n Form submitted successfully!");
+        setTimeout(() => {
+          setFormSubmitted(false);
+        }, 2000);
+        // Call the parent component's onFormSubmit function if provided
+        if (onFormSubmit) {
+          onFormSubmit();
+        }
+      } else {
+        console.error("Form submission failed.");
+      }
+    } catch (error) {
+      console.error("Network error:", error);
+    }
+  };
 
-                    <button type="submit" className="btn btn-primary">
-                        Send Now
-                    </button>
-                </form>
-            ) : (
-                <p>Thank you for submitting the form!</p>
-            )}
-        </>
-    );
+  return (
+    <>
+      {!formSubmitted ? (
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Dilip Kumar Maurya"
+              required
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="curiousdilip@gmail.com"
+              required
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="phone">Phone number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+91 12345 98765"
+              required
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="3"
+              placeholder="I wanted to discuss that....."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
+      ) : (
+        <p>Thank you for submitting the form!</p>
+      )}
+    </>
+  );
 };
 
 export default ContactForm;

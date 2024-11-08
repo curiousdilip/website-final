@@ -8,7 +8,7 @@ export default function About() {
       <h1 className="about-heading">about</h1>
       <ProfileCard/>
       <div className="info">
-      <h3>Hi I'm Dilip Kumar</h3>
+      <h3>Dilip Kumar Maurya</h3>
                 <p>
                   I am a web developer with more than 1 year of
                   experience, I'm very passionate about technology and

@@ -10,7 +10,7 @@
     padding-bottom: 24px;
     border-left-width: 1px;
     margin-left: 28px;
-    border-left: 1px solid #4e5ed3;
+    border-left: 1px solid #4e5ed3;list-style: none;
 }
 
 .timeline li::before {
@@ -28,4 +28,8 @@
 
 .timeline li .day {
     margin-bottom: 16px !important;
+}
+
+.timeline li p {
+    margin-bottom: 0 !important;
 }

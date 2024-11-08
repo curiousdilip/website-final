@@ -8,7 +8,7 @@ const TimeLine = () => {
 
                 {timeline.map((item, index) => (
                     <li key={index} >
-                        <h5 className='day'> {item.day}</h5>
+                        <h4 className='day'> {item.day}</h4>
                         <p>{item.description} <a href={item.link} target='_blank'>{
                             item.projectName}</a></p>
                     </li>

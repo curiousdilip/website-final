@@ -1,6 +1,19 @@
+"use client";
+import { useState } from "react";
 import Link from "next/link";
 import "./header.scss";
+
 export default function Header() {
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsChecked(!isChecked);
+  };
+
+  const handleLinkClick = () => {
+    setIsChecked(false); // Uncheck the checkbox when a link is clicked
+  };
+
   return (
     <>
       <header>
@@ -11,22 +24,37 @@ export default function Header() {
                 <img src="/img/logo-white.svg" />
               </Link>
             </li>
-            <input type="checkbox" id="check" />
+            <input
+              type="checkbox"
+              id="check"
+              checked={isChecked}
+              onChange={handleMenuToggle}
+            />
             <span className="menu">
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/" onClick={handleLinkClick}>
+                  Home
+                </Link>
               </li>
               <li>
-                <Link href="/about">About</Link>
+                <Link href="/about" onClick={handleLinkClick}>
+                  About
+                </Link>
               </li>
               <li>
-                <Link href="/work">Work</Link>
+                <Link href="/work" onClick={handleLinkClick}>
+                  Work
+                </Link>
               </li>
               <li>
-                <Link href="/uses">Uses</Link>
+                <Link href="/uses" onClick={handleLinkClick}>
+                  Uses
+                </Link>
               </li>
               <li>
-                <Link href="/contact">Contact</Link>
+                <Link href="/contact" onClick={handleLinkClick}>
+                  Contact
+                </Link>
               </li>
               <label htmlFor="check" className="close-menu">
                 <i className="bi bi-x-lg"></i>

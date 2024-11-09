@@ -37,7 +37,6 @@ export const metadata = {
     image: "https://www.dilipmaurya.in/image.jpg",
   },
   robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1",
 };
 export default function Home() {
   return (

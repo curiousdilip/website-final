@@ -2,6 +2,7 @@ import Image from "next/image";
 import { projects } from "../data";
 import "./work.scss";
 import Link from "next/link";
+
 export default function Work() {
   return (
     <section id="work">

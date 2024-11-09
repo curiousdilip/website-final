@@ -112,13 +112,17 @@
       font-weight: 300;
     }
 
-    .project-link {
-      display: inline-block;
-      padding: 10px 20px;
-      border: 0.5px solid var(--color1);
-      border-radius: 4px;
-      text-decoration: none;
-      margin: 20px 0;
+    .btns {
+      display: flex;
+      justify-content: space-between;
+      a {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 0.5px solid var(--color1);
+        border-radius: 4px;
+        text-decoration: none;
+        margin: 20px 0;
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./profile-card.scss";
+import "./profile-card.css";
 import Image from "next/image";
 const ProfileCard = () => {
   return (

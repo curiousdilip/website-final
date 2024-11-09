@@ -1,6 +1,6 @@
 import { projects } from "../../data";
 import Image from "next/image";
-import "../work.scss";
+import "../work.css";
 import Link from "next/link";
 export const metadata = {
   title: "Projects",

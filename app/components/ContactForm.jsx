@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "./contact-form.scss";
+import "./contact-form.css";
 
 const ContactForm = ({ onFormSubmit }) => {
   const [formSubmitted, setFormSubmitted] = useState(false);

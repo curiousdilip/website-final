@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import "./header.scss";
+import "./header.css";
 
 export default function Header() {
   const [isChecked, setIsChecked] = useState(false);

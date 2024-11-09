@@ -1,0 +1,41 @@
+#hero {
+  background-color: var(--color2);
+  color: var(--color1);
+  height: 95vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#hero .container .info h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 38px;
+}
+#hero .container .info h2 {
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  color: var(--color1);
+  margin-bottom: 10px;
+}
+#hero .container .info p {
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: var(--color1);
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+#hero .container .info ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+#hero .container .info ul li {
+  line-height: 1.6;
+  font-size: 18px;
+  font-weight: 300;
+}
+#hero .container .info a {
+  text-decoration: none;
+  color: var(--color1);
+}

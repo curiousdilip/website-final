@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./page.scss";
+import "./page.css";
 export const metadata = {
   title: "Dilip Kumar | Frontend Web Developer",
   description:

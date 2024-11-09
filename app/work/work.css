@@ -1,0 +1,111 @@
+#work .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#work .container .work-heading {
+  font-size: 48px;
+  line-height: 50px;
+  color: var(--color1);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+#work .container .projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  #work .container .projects {
+    grid-template-columns: auto;
+  }
+}
+#work .container .projects .project {
+  border: 1px solid var(--color1);
+  padding: 10px;
+  border-radius: 5px;
+}
+#work .container .projects .project img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+#work .container .projects .project .details .p-title {
+  font-size: 20px;
+  padding: 10px 0;
+}
+#work .container .projects .project .details .description {
+  font-size: 14px;
+}
+#work .container .projects .project .details .tech-stack {
+  padding: 10px 0;
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+#work .container .projects .project .details .tech-stack li {
+  font-size: 10px;
+  padding: 5px;
+  border: 0.5px solid var(--color1);
+}
+#work .container .projects .project .details .p-link {
+  font-size: 14px;
+  text-decoration: none;
+}
+#project-detail .container {
+  padding-block: 100px;
+}
+#project-detail .container .project-title {
+  font-size: 48px;
+  line-height: 50px;
+  color: var(--color1);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+#project-detail .container .project-description {
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 18px;
+  color: var(color2);
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+#project-detail .container .tech-stack {
+  padding: 10px 0;
+  display: flex;
+  list-style: none;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+#project-detail .container .tech-stack li {
+  padding: 10px;
+  border-radius: 10px;
+  border: 0.5px solid var(--color1);
+}
+#project-detail .container .job {
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 18px;
+  color: var(color2);
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+#project-detail .container .time {
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 18px;
+  color: var(color2);
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+#project-detail .container .btns {
+  display: flex;
+  justify-content: space-between;
+}
+#project-detail .container .btns a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 0.5px solid var(--color1);
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 20px 0;
+}

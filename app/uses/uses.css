@@ -1,0 +1,77 @@
+#uses .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#uses .container .uses-heading {
+  font-size: 48px;
+  line-height: 50px;
+  color: var(--color1);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+#uses .container h2 {
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color1);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+#uses .container p {
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 18px;
+  color: var(color2);
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+#uses .container hr {
+  margin: 20px 0;
+}
+#uses .container .hardware {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  #uses .container .hardware {
+    grid-template-columns: auto;
+  }
+}
+#uses .container .hardware .product {
+  border: 1px solid var(--color1);
+}
+#uses .container .hardware .product .detail {
+  padding: 10px;
+}
+#uses .container .hardware .product .detail p {
+  margin: 0;
+}
+#uses .container .hardware .product .detail h3 {
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--color1);
+}
+#uses .container .softwares {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  #uses .container .softwares {
+    grid-template-columns: auto;
+  }
+}
+#uses .container .softwares .software {
+  border: 1px solid var(--color1);
+}
+#uses .container .softwares .software .detail {
+  padding: 10px;
+}
+#uses .container .softwares .software .detail p {
+  margin: 0;
+}
+#uses .container .softwares .software .detail h3 {
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--color1);
+}

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { hardware, software } from "../data";
 import Link from "next/link";
-import "./uses.scss";
+import "./uses.css";
 export default function Uses() {
   return (
     <>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { projects } from "../data";
-import "./work.scss";
+import "./work.css";
 import Link from "next/link";
 
 export default function Work() {

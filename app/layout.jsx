@@ -1,4 +1,4 @@
-import "./globals.scss";
+import "./globals.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 import { Inter } from "next/font/google";

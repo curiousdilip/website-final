@@ -1,0 +1,37 @@
+#about .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#about .container .about-heading {
+  font-size: 48px;
+  line-height: 50px;
+  color: var(--color1);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+#about .container .info {
+  display: flex;
+  flex-direction: column;
+}
+#about .container .info .content h2 {
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color1);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+#about .container .info .content p {
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 18px;
+  color: var(color2);
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+#about .container .info .content h3 {
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color1);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}

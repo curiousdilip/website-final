@@ -120,3 +120,37 @@ export const timeline = [
     },
 
 ]
+
+export const hardware=[
+  {
+    img: '/projects/dilipmaurya.png',
+    name: 'Dell-P2425HE LED Monitor',
+    type: 'Monitor',
+  },
+  {
+    img: '/projects/dilipmaurya.png',
+    name: 'Dell-P2425HE LED Monitor',
+    type: 'Monitor',
+  },  {
+    img: '/projects/dilipmaurya.png',
+    name: 'Dell-P2425HE LED Monitor',
+    type: 'Monitor',
+  },
+]
+
+export const software=[
+  {
+    img: '/projects/dilipmaurya.png',
+    name: 'VS Code',
+    type: 'IDE',
+  },
+  {
+    img: '/projects/dilipmaurya.png',
+    name: 'Dell-P2425HE LED Monitor',
+    type: 'Monitor',
+  },  {
+    img: '/projects/dilipmaurya.png',
+    name: 'Dell-P2425HE LED Monitor',
+    type: 'Monitor',
+  },
+]

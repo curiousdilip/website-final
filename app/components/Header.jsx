@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import "./header.css";
+import Image from "next/image";
 
 export default function Header() {
   const [isChecked, setIsChecked] = useState(false);
@@ -18,19 +19,25 @@ export default function Header() {
     <>
       <header>
         <nav>
-          <ul className="nav-bar">
-            <li className="logo">
+          <div className="nav-bar">
+            <div className="logo">
               <Link href="/">
-                <img src="/img/logo-white.svg" />
+                <Image
+                  src="/img/logo-white.svg"
+                  alt="dilip kumar website logo"
+                  width={40}
+                  height={40}
+                  aria-label="logo for my website"
+                />
               </Link>
-            </li>
+            </div>
             <input
               type="checkbox"
               id="check"
               checked={isChecked}
               onChange={handleMenuToggle}
             />
-            <span className="menu">
+            <ul className="menu">
               <li>
                 <Link href="/" onClick={handleLinkClick}>
                   Home
@@ -59,11 +66,11 @@ export default function Header() {
               <label htmlFor="check" className="close-menu">
                 <i className="bi bi-x-lg"></i>
               </label>
-            </span>
+            </ul>
             <label htmlFor="check" className="open-menu">
               <i className="bi bi-list"></i>
             </label>
-          </ul>
+          </div>
         </nav>
       </header>
     </>

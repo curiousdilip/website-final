@@ -22,6 +22,7 @@ nav {
 }
 .menu {
   display: flex;
+  list-style-type: none;
 }
 .menu li {
   padding-left: 30px;

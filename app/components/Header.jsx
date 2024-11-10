@@ -22,11 +22,9 @@ export default function Header() {
           <div className="nav-bar">
             <div className="logo">
               <Link href="/">
-                <Image
+                <img
                   src="/img/logo-white.svg"
                   alt="dilip kumar website logo"
-                  width={40}
-                  height={40}
                   aria-label="logo for my website"
                 />
               </Link>

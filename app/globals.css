@@ -4,6 +4,7 @@
   box-sizing: border-box;
   background-color: var(--color2);
   color: var(--color1);
+  font-display:"swap";
 }
 
 :root {

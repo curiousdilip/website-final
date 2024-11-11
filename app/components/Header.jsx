@@ -61,10 +61,11 @@ export default function Header() {
                   Contact
                 </Link>
               </li>
-              <label htmlFor="check" className="close-menu">
+          
+            </ul>
+            <label htmlFor="check" className="close-menu">
                 <i className="bi bi-x-lg"></i>
               </label>
-            </ul>
             <label htmlFor="check" className="open-menu">
               <i className="bi bi-list"></i>
             </label>

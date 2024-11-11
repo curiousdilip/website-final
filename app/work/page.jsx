@@ -1,9 +1,40 @@
+"use client";
 import Image from "next/image";
-import { projects } from "../data";
-import "./work.css";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import "./work.css";
 
 export default function Work() {
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Fetching the data from CosmicJS API
+    const fetchProjects = async () => {
+      try {
+        const res = await fetch(
+          "https://api.cosmicjs.com/v3/buckets/website-projects/objects?pretty=true&query=%7B%22type%22:%22projects%22%7D&limit=10&read_key=gV37hS5tuppUOgUwDAjiKKMYsOyBfVjD4HPoVg3iCKu9YFPv2c&depth=1&props=slug,title,metadata"
+        );
+        const data = await res.json();
+
+        // Check if the response contains the 'objects' array
+        if (data.objects) {
+          setProjects(data.objects); // Set projects data to state
+        }
+      } catch (error) {
+        console.error("Error fetching projects data:", error);
+      } finally {
+        setLoading(false); // Set loading to false once data is fetched
+      }
+    };
+
+    fetchProjects();
+  }, []); // Empty dependency array to run only on mount
+
+  if (loading) {
+    return <p>Loading...</p>; // Show loading message while data is being fetched
+  }
+
   return (
     <section id="work">
       <div className="container">
@@ -13,24 +44,34 @@ export default function Work() {
           {projects.map((project, index) => (
             <div className="project" key={index}>
               <Image
-                src={project.imgSrc}
+                src={project.metadata.img_main.url} // Access the image from metadata
                 alt={project.title}
                 width={300}
                 height={200}
                 priority="true"
-                layout="intrinsic"
+                style={{ width: "auto", height: "auto" }}
               />
               <div className="details">
                 <h3 className="p-title">{project.title}</h3>
-                <p className="description">{project.description}</p>
-
-                {project.tech ? (
+                {/* <p className="description">{project.metadata.description}</p> */}
+                <p className="description">
+                  {project.metadata.description ? (
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: project.metadata.description,
+                      }}
+                    />
+                  ) : (
+                    "No description available."
+                  )}
+                </p>
+                {project.metadata.tech && project.metadata.tech.length > 0 && (
                   <ul className="tech-stack">
-                    {project.tech.map((technology, techIndex) => (
+                    {project.metadata.tech.map((technology, techIndex) => (
                       <li key={techIndex}>{technology}</li>
                     ))}
                   </ul>
-                ) : null}
+                )}
 
                 <Link className="p-link" href={`/work/${project.slug}`}>
                   See Details &rarr;

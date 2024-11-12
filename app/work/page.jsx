@@ -44,7 +44,7 @@ export default function Work() {
           {projects.map((project, index) => (
             <div className="project" key={index}>
               <Image
-                src={project.metadata.img_main.url} // Access the image from metadata
+                src={project.metadata.img_main.url}
                 alt={project.title}
                 width={300}
                 height={200}
@@ -53,7 +53,6 @@ export default function Work() {
               />
               <div className="details">
                 <h3 className="p-title">{project.title}</h3>
-                {/* <p className="description">{project.metadata.description}</p> */}
                 <p className="description">
                   {project.metadata.description ? (
                     <span
@@ -73,8 +72,8 @@ export default function Work() {
                   </ul>
                 )}
 
-                <Link className="p-link" href={`/work/${project.slug}`}>
-                  See Details &rarr;
+                <Link className="p-link" href={project.metadata.href}>
+                  See Live &rarr;
                 </Link>
               </div>
             </div>

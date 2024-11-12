@@ -38,7 +38,7 @@ export default function Projects() {
           <Image
             src={project.metadata.img_main.url}
             alt={project.title}
-            width={300}
+            width={344}
             height={200}
             priority="true"
             style={{ width: "auto", height: "auto" }}

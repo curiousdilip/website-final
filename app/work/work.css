@@ -26,7 +26,7 @@
 }
 #work .container .projects .project img {
   object-fit: cover;
-  width: 100%;
+  max-width: 100%;
   border-radius: 5px;
 }
 #work .container .projects .project .details .p-title {

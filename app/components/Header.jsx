@@ -25,6 +25,8 @@ export default function Header() {
                 <img
                   src="/img/logo-white.svg"
                   alt="dilip kumar website logo"
+                  width="40px"
+                  height="40px"
                   aria-label="logo for my website"
                 />
               </Link>
@@ -61,11 +63,10 @@ export default function Header() {
                   Contact
                 </Link>
               </li>
-          
             </ul>
             <label htmlFor="check" className="close-menu">
-                <i className="bi bi-x-lg"></i>
-              </label>
+              <i className="bi bi-x-lg"></i>
+            </label>
             <label htmlFor="check" className="open-menu">
               <i className="bi bi-list"></i>
             </label>

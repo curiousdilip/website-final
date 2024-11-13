@@ -58,7 +58,8 @@
 }
 @media (max-width: 768px) {
   #uses .container .softwares {
-    grid-template-columns: auto;
+    grid-template-columns: repeat(2, 1fr);
+
   }
 }
 #uses .container .softwares .software {

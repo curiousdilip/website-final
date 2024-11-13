@@ -60,11 +60,16 @@ nav {
   cursor: pointer;
   font-size: 1.5rem;
   display: none;
+  z-index: 101; 
 }
 .open-menu {
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
+}
+
+#check:checked ~ .close-menu {
+  z-index: 102; 
 }
 .close-menu {
   top: 20px;

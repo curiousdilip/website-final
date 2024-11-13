@@ -15,33 +15,15 @@ export default function Uses() {
           </p>
           <h2>My computer</h2>
           <Image
-            src="/projects/dilipmaurya.png"
+            src="/img/my-pc.jpg"
             alt="my Computer"
             width={1920}
-            height={200}
+            height={870}
             priority="true"
             layout="intrinsic"
           />
           <hr />
           <h2>My Hardware</h2>
-          {/* <div className="hardware">
-            {hardware.map((product, index) => (
-              <div className="product" key={index}>
-                <Image
-                  src={product.img}
-                  alt={product.name}
-                  width={500}
-                  height={500}
-                  priority="true"
-                  layout="intrinsic"
-                />
-                <div className="detail">
-                  <h3>{product.name}</h3>
-                  <p>{product.type}</p>
-                </div>
-              </div>
-            ))}
-          </div> */}
           <Hardware />
           <hr />
           <h2>Software</h2>

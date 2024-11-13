@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { hardware, software } from "../data";
 import Link from "next/link";
 import "./uses.css";
+import Software from "../components/Software";
+import Hardware from "../components/Hardware";
 export default function Uses() {
   return (
     <>
@@ -23,7 +24,7 @@ export default function Uses() {
           />
           <hr />
           <h2>My Hardware</h2>
-          <div className="hardware">
+          {/* <div className="hardware">
             {hardware.map((product, index) => (
               <div className="product" key={index}>
                 <Image
@@ -40,27 +41,11 @@ export default function Uses() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
+          <Hardware />
           <hr />
           <h2>Software</h2>
-          <div className="softwares">
-            {software.map((product, index) => (
-              <div className="software" key={index}>
-                <Image
-                  src={product.img}
-                  alt={product.name}
-                  width={500}
-                  height={500}
-                  priority="true"
-                  layout="intrinsic"
-                />
-                <div className="detail">
-                  <h3>{product.name}</h3>
-                  <p>{product.type}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <Software />
         </div>
       </section>
     </>

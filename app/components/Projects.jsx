@@ -40,7 +40,7 @@ export default function Projects() {
             alt={project.title}
             width={344}
             height={200}
-            priority="true"
+            priority={false}
             style={{ width: "auto", height: "auto" }}
           />
           <div className="details">

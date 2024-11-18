@@ -10,6 +10,15 @@
   margin-bottom: 20px;
 }
 
+#uses .container  p{
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 18px;
+  color: var(color2);
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
 #uses .container .my-pc h2{
   font-size: 24px;
   line-height: 32px;

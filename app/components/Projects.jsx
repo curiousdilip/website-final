@@ -3,37 +3,38 @@ import Image from "next/image";
 import Link from "next/link";
 import "./projects.css";
 import { useEffect, useState } from "react";
+import { projects } from "../data";
 export default function Projects() {
-  const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(true);
+  // const [projects, setProjects] = useState([]);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const res = await fetch(
-          "https://api.cosmicjs.com/v3/buckets/website-projects/objects?pretty=true&query=%7B%22type%22:%22projects%22%7D&limit=10&read_key=gV37hS5tuppUOgUwDAjiKKMYsOyBfVjD4HPoVg3iCKu9YFPv2c&depth=1&props=slug,title,metadata"
-        );
-        const data = await res.json();
+  // useEffect(() => {
+  //   const fetchProjects = async () => {
+  //     try {
+  //       const res = await fetch(
+  //         "https://api.cosmicjs.com/v3/buckets/website-projects/objects?pretty=true&query=%7B%22type%22:%22projects%22%7D&limit=10&read_key=gV37hS5tuppUOgUwDAjiKKMYsOyBfVjD4HPoVg3iCKu9YFPv2c&depth=1&props=slug,title,metadata"
+  //       );
+  //       const data = await res.json();
 
-        if (data.objects) {
-          setProjects(data.objects);
-        }
-      } catch (error) {
-        console.error("Error fetching projects data:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
+  //       if (data.objects) {
+  //         setProjects(data.objects);
+  //       }
+  //     } catch (error) {
+  //       console.error("Error fetching projects data:", error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    fetchProjects();
-  }, []);
+  //   fetchProjects();
+  // }, []);
 
-  if (loading) {
-    return <p>Loading...</p>;
-  }
+  // if (loading) {
+  //   return <p>Loading...</p>;
+  // }
   return (
     <div className="projects">
-      {projects.map((project, index) => (
+      {/* {projects.map((project, index) => (
         <div className="project" key={index}>
           <Image
             src={project.metadata.img_main.url}
@@ -65,6 +66,34 @@ export default function Projects() {
             )}
 
             <Link className="p-link" href={project.metadata.href}>
+              See Live &rarr;
+            </Link>
+          </div>
+        </div>
+      ))} */}
+
+      {projects.map((project, index) => (
+        <div className="project" key={index}>
+          <Image
+            src={project.imgSrc}
+            alt={project.title}
+            width={344}
+            height={200}
+            priority={true}
+            style={{ width: "auto", height: "auto" }}
+          />
+          <div className="details">
+            <h2 className="p-title">{project.title}</h2>
+            <p className="description">{project.description}</p>
+            {project.tech && project.tech.length > 0 && (
+              <ul className="tech-stack">
+                {project.tech.map((technology, techIndex) => (
+                  <li key={techIndex}>{technology}</li>
+                ))}
+              </ul>
+            )}
+
+            <Link className="p-link" href={project.href}>
               See Live &rarr;
             </Link>
           </div>

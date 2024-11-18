@@ -9,6 +9,15 @@
   text-transform: capitalize;
   margin-bottom: 20px;
 }
+
+#work .container  p{
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 18px;
+  color: var(color2);
+  margin-bottom: 20px;
+  font-weight: 300;
+}
 #work .container .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

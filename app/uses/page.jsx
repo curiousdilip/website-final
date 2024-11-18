@@ -15,10 +15,10 @@ export default function Uses() {
             <Image
               src="/img/my-pc.jpg"
               alt="my Computer"
-              width={1920}
-              height={870}
+              width={750}
+              height={340}
               priority="true"
-              layout="intrinsic"
+              layout="responsive"
             />
             <ul>
               <li>Macbook Air M1 2020</li>

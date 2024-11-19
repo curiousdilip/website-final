@@ -9,3 +9,12 @@
   text-transform: capitalize;
   margin-bottom: 20px;
 }
+
+#contact .container  p {
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: var(--color1);
+  font-weight: 300;
+  margin-bottom: 20px;
+}

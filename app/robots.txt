@@ -1,0 +1,11 @@
+User-Agent: Googlebot
+Allow: /
+Disallow: /private/
+
+User-Agent: Applebot
+Disallow: /
+
+User-Agent: Bingbot
+Disallow: /
+
+Sitemap: https://acme.com/sitemap.xml

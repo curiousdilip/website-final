@@ -1,5 +1,43 @@
 import Image from "next/image";
 import "./uses.css";
+export const metadata = {
+  title: "Uses | Dilip Kumar",
+  description:
+    "Below is the collection of tools and tech I rely on for development, gaming, content creation, and daily tasks.",
+  keywords: "curiousdilip, web developer dilip",
+  authors: [
+    {
+      name: "Dilip Kumar",
+      url: "https://www.dilipmaurya.in/uses",
+    },
+  ],
+  openGraph: {
+    title: "Uses | Dilip Kumar",
+    description:
+      "Below is the collection of tools and tech I rely on for development, gaming, content creation, and daily tasks.",
+    url: "https://www.dilipmaurya.in/projects",
+    siteName: "Uses | Dilip Kumar",
+    images: [
+      {
+        url: "https://www.dilipmaurya.in/image.jpg",
+        width: 800,
+        height: 600,
+        alt: "Image description",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@curiousdilip",
+    title: "Uses | Dilip Kumar",
+    description:
+      "Below is the collection of tools and tech I rely on for development, gaming, content creation, and daily tasks.",
+    image: "https://www.dilipmaurya.in/image.jpg",
+  },
+  robots: "index, follow",
+};
 export default function Uses() {
   return (
     <>

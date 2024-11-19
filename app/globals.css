@@ -4,7 +4,7 @@
   box-sizing: border-box;
   background-color: var(--color2);
   color: var(--color1);
-  font-display:"swap";
+  font-display:swap;
 }
 
 :root {
@@ -20,6 +20,21 @@
 
 }
 
+#error{
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#error h1{
+color: var(--color1);
+font-size: 48px;
+line-height: 50px;
+text-transform: capitalize;
+margin-bottom: 20px;
+}
 
 @media (max-width:768px) {
 .container{

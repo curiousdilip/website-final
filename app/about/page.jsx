@@ -2,6 +2,44 @@ import Link from "next/link";
 import TimeLine from "../components/Timeline";
 import ProfileCard from "../components/ProfileCard";
 import "./about.css";
+export const metadata = {
+  title: "About | Dilip Kumar",
+  description:
+    "Learn more about Dilip Kumar Maurya, a passionate Frontend Web Developer based in New Delhi, India. Discover my journey, skills, and professional goals.",
+  keywords: "curiousdilip, web developer dilip",
+  authors: [
+    {
+      name: "Dilip Kumar",
+      url: "https://www.dilipmaurya.in/about",
+    },
+  ],
+  openGraph: {
+    title: "About | Dilip Kumar",
+    description:
+      "Learn more about Dilip Kumar Maurya, a passionate Frontend Web Developer based in New Delhi, India. Discover my journey, skills, and professional goals.",
+    url: "https://www.dilipmaurya.in/projects",
+    siteName: "About | Dilip Kumar",
+    images: [
+      {
+        url: "https://www.dilipmaurya.in/image.jpg",
+        width: 800,
+        height: 600,
+        alt: "Image description",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@curiousdilip",
+    title: "About | Dilip Kumar",
+    description:
+      "Learn more about Dilip Kumar Maurya, a passionate Frontend Web Developer based in New Delhi, India. Discover my journey, skills, and professional goals.",
+    image: "https://www.dilipmaurya.in/image.jpg",
+  },
+  robots: "index, follow",
+};
 export default function About() {
   return (
     <section id="about">

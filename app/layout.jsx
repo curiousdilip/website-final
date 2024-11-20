@@ -48,6 +48,9 @@ export const metadata = {
     image: "https://www.dilipmaurya.in/image.jpg",
   },
   robots: "index, follow",
+  icons: {
+    shortcut: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({ children }) {

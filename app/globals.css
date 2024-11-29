@@ -12,6 +12,11 @@
   --color2: #08070B;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+
 .container{
   padding-inline: 1.5rem;
   max-width: 800px;

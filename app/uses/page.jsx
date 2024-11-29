@@ -74,6 +74,7 @@ export default function Uses() {
               </li>
               <li>HyperX Cloud II</li>
               <li>Keychron K2 V2</li>
+              <li>Razor Cobra Mouse</li>
             </ul>
           </div>
           <hr />

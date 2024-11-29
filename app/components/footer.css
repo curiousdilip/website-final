@@ -2,10 +2,10 @@ footer {
   z-index: 888;
   background-color: var(--color2);
   padding: 20px 0;
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
   width: 100%;
-  right: 0;
+  /* right: 0; */
 }
 footer .footer {
   padding-inline: 1.5rem;

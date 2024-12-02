@@ -38,7 +38,7 @@ export const metadata = {
   },
   robots: "index, follow",
 };
-export default function Work() {
+export default function Project() {
   return (
     <section id="work">
       <div className="container">

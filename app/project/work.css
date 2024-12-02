@@ -14,9 +14,8 @@
   text-rendering: optimizeSpeed;
   line-height: 1.6;
   font-size: 18px;
-  color: var(color2);
+  color: var(--color1);
   margin-bottom: 20px;
-  font-weight: 300;
 }
 #work .container .projects {
   display: grid;

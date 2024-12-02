@@ -30,7 +30,7 @@
 #resume .container a {
   text-rendering: optimizeSpeed;
   font-size: 18px;
-  color: var(color2);
+  color: var(--color1);
   display: inline-block;
   /* margin: 10px 0; */
 }

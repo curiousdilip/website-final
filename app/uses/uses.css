@@ -14,9 +14,8 @@
   text-rendering: optimizeSpeed;
   line-height: 1.6;
   font-size: 18px;
-  color: var(color2);
+  color: var(--color1);
   margin-bottom: 20px;
-  font-weight: 300;
 }
 
 #uses .container .my-pc h2{
@@ -27,14 +26,6 @@
   margin: 20px 0;
 }
 
-#uses .container .my-pc p{
-  text-rendering: optimizeSpeed;
-  line-height: 1.6;
-  font-size: 18px;
-  color: var(color2);
-  margin-bottom: 20px;
-  font-weight: 300;
-}
 
 
 #uses .container .my-pc ul{
@@ -42,18 +33,22 @@
   text-rendering: optimizeSpeed;
   line-height: 1.6;
   font-size: 18px;
-  color: var(color2);
-  font-weight: 300;
+  color: var(--color1);
+  font-weight: 400;
   padding-inline-start:20px;
+}
+
+#uses .container .tech-stack{
+  padding-top: 15px;
+border-top: 1px solid var(--color1);
 }
 
 #uses .container .tech-stack p{
   text-rendering: optimizeSpeed;
   line-height: 1.6;
   font-size: 18px;
-  color: var(color2);
+  color: var(--color1);
   margin-bottom: 20px;
-  font-weight: 300;
 }
 
 
@@ -62,12 +57,6 @@
   text-rendering: optimizeSpeed;
   line-height: 1.6;
   font-size: 18px;
-  color: var(color2);
-  font-weight: 300;
+  color: var(--color1);
   padding-inline-start:20px;
-}
-
-
-#uses .container hr {
-  margin: 20px 0;
 }

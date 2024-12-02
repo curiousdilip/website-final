@@ -77,7 +77,7 @@ export default function Uses() {
               <li>Razor Cobra Mouse</li>
             </ul>
           </div>
-          <hr />
+
           <div className="tech-stack">
             <h2>The Technologies & Tools I used to build this site:</h2>
             <ul>
@@ -92,7 +92,14 @@ export default function Uses() {
               </li>
             </ul>
             <p>
-              The code for this website is available <a href="#">here</a>.
+              The code for this website is available{" "}
+              <a
+                href="https://github.com/curiousdilip/website2025"
+                target="_blank"
+              >
+                here
+              </a>
+              .
             </p>
           </div>
         </div>

@@ -4,21 +4,33 @@ export default function Footer() {
     <>
       <footer>
         <div className="footer">
-          <a aria-label="Github" href="https://github.com/curiousdilip">
-            {" "}
+          <a
+            aria-label="Github"
+            target="_blank"
+            href="https://github.com/curiousdilip"
+          >
             github
           </a>
-          <a aria-label="Twitter" href="https://twitter.com/curiousdilip">
+          <a
+            aria-label="Twitter"
+            target="_blank"
+            href="https://twitter.com/curiousdilip"
+          >
             {" "}
             twitter
           </a>
           <a
             aria-label="LinkedIn"
+            target="_blank"
             href="https://www.linkedin.com/in/curiousdilip/"
           >
             linkedin
           </a>
-          <a aria-label="Email" href="mailto:curiousdilip@gmail.com">
+          <a
+            aria-label="Email"
+            target="_blank"
+            href="mailto:curiousdilip@gmail.com"
+          >
             instagram
           </a>
         </div>

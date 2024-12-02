@@ -46,7 +46,7 @@ nav {
   bottom: 0;
   left: 0;
   width: 0;
-  height: .15px;
+  height: px;
   background-color: var(--color1);
   transition: 0.15s ease-in-out;
 }

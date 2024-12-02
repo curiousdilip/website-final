@@ -49,8 +49,8 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/work" onClick={handleLinkClick}>
-                  Work
+                <Link href="/project" onClick={handleLinkClick}>
+                  Project
                 </Link>
               </li>
               <li>

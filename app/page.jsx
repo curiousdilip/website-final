@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Dilip Kumar | Frontend Web Developer",
     images: [
       {
-        url: "https://yourwebsite.com/hero-image-png",
+        url: "https://website2025.vercel.app/home-page.png",
         width: 800,
         height: 600,
         alt: "home page",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "Dilip Kumar | Frontend Web Developer",
     description:
       "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
-    image: "https://www.dilipmaurya.in/hero-image-png",
+    image: "https://website2025.vercel.app/home-page.png",
   },
   robots: "index, follow",
 };

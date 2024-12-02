@@ -30,10 +30,10 @@ export const metadata = {
     siteName: "Dilip Kumar | Frontend Web Developer",
     images: [
       {
-        url: "https://yourwebsite.com/image.jpg",
+        url: "https://website2025.vercel.app/home-page.png",
         width: 800,
         height: 600,
-        alt: "Image description",
+        alt: "home page",
       },
     ],
     locale: "en_US",
@@ -45,12 +45,9 @@ export const metadata = {
     title: "Dilip Kumar | Frontend Web Developer",
     description:
       "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
-    image: "https://www.dilipmaurya.in/image.jpg",
+    image: "https://website2025.vercel.app/home-page.png",
   },
   robots: "index, follow",
-  icons: {
-    shortcut: "/favicon.svg",
-  },
 };
 
 export default function RootLayout({ children }) {

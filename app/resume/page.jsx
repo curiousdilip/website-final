@@ -78,44 +78,44 @@ export default function Resume() {
           <div className="work-experience">
             <h2>Work Experience</h2>
             <div className="box">
-              <div className="year-company">
-                <h3>Sept 2023 - Present</h3>
-                <h3>World Health Organization</h3>
-              </div>
-              <div className="text">
-                <h4>Web Content Executive</h4>
-                <p>
-                  In overseeing the WHO India website, my responsibilities
-                  encompass updating reports, posting job listings, and making
-                  minor UI/UX improvements. This dynamic role demands precision
-                  to maintain the site's credibility and relevance. Timely
-                  report updates enhance information accuracy, while job
-                  postings attract qualified professionals. Implementing minor
-                  UI/UX changes ensures a seamless and user-friendly experience,
-                  optimizing accessibility to crucial health-related content.
-                </p>
-              </div>
+              <h3 className="title">Web Content Executive</h3>
+              <h4 className="location">
+                <strong>World Health Organization </strong>, New Delhi, India
+              </h4>
+              <p className="duration">Sept 2023 - Present</p>
             </div>
             <div className="box">
-              <div className="year-company">
-                <h3>Feb 2022 - July 2023</h3>
-                <h3>Taknik Bharti</h3>
-              </div>
-              <div className="text">
-                <h4>Frontend web Developer</h4>
-                <p>
-                  Taknik Bharti is a leading provider of Software solutions for
-                  small and medium-sized businesses. As a Frontend Web Developer
-                  at Taknik Bharti, I have had the opportunity to work on a
-                  variety of projects for clients in the tech industry. Our team
-                  is dedicated to delivering high-quality, innovative solutions
-                  that help our clients streamline their operations and improve
-                  their bottom line. I have been able to learn and grow as a
-                  developer in this dynamic and collaborative environment, and
-                  am excited to continue contributing to the success of the
-                  company.
-                </p>
-              </div>
+              <h3 className="title">Frontend Web Developer</h3>
+              <h4 className="location">
+                <strong>Taknik Bharti </strong>, Rajasthan, India
+              </h4>
+              <p className="duration">Feb 2022 - July 2023</p>
+            </div>
+          </div>
+
+          <div className="education">
+            <h2>Education</h2>
+            <div className="box">
+              <h3 className="title">Master of Computer Application</h3>
+              <h4 className="location">
+                <strong>Chandigarh University (CU) </strong>, Punjab, India
+              </h4>
+              <p className="duration">July 2024 - Present</p>
+            </div>
+            <div className="box">
+              <h3 className="title">Bachelors of Computer Application</h3>
+              <h4 className="location">
+                <strong>Guru Gobind Singh Indraprastha University </strong>, New
+                Delhi, India
+              </h4>
+              <p className="duration">Aug 2019 - July 2022</p>
+            </div>
+            <div className="box">
+              <h3 className="title">Intermediate</h3>
+              <h4 className="location">
+                <strong>Mount Carmel School, Dwarka </strong>, New Delhi, India
+              </h4>
+              <p className="duration">April 2017 - May 2029</p>
             </div>
           </div>
 

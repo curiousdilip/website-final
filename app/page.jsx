@@ -19,10 +19,10 @@ export const metadata = {
     siteName: "Dilip Kumar | Frontend Web Developer",
     images: [
       {
-        url: "https://yourwebsite.com/image.jpg",
+        url: "https://yourwebsite.com/hero-image-png",
         width: 800,
         height: 600,
-        alt: "Image description",
+        alt: "home page",
       },
     ],
     locale: "en_US",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "Dilip Kumar | Frontend Web Developer",
     description:
       "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
-    image: "https://www.dilipmaurya.in/image.jpg",
+    image: "https://www.dilipmaurya.in/hero-image-png",
   },
   robots: "index, follow",
 };
@@ -47,8 +47,9 @@ export default function Home() {
             <h1>Dilip Kumar Maurya</h1>
             <h2>Frontend Web Developer</h2>
             <p>
-              I am improving myself every day, even if it’s just a little bit.
-              Small steps lead to big changes.
+              Passionate about crafting stylish, modern websites, web services,
+              and online stores, specializing in designing and developing
+              services tailored to each client's unique needs.
             </p>
             <ul>
               <li>

@@ -2,6 +2,7 @@
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
 #resume .container .resume-heading {
   font-size: 48px;
   line-height: 50px;
@@ -24,7 +25,6 @@
   font-size: 18px;
   color: var(--color1);
   margin-bottom: 20px;
-  font-weight: 300;
 }
 
 #resume .container a {
@@ -33,7 +33,6 @@
   color: var(color2);
   display: inline-block;
   /* margin: 10px 0; */
-  font-weight: 300;
 }
 
 #resume .container .ongoing-project {
@@ -42,78 +41,109 @@
   align-items: center;
   margin: 20px 0;
 }
-
-#resume .container .work-experience .box
-{
-    display: flex;
-    flex-direction: row;
-    margin: 20px 0;
-    gap: 20px;
+#resume .container .work-experience{
+  padding-top: 10px;
+border-top: 1px solid var(--color1);
 }
 
-#resume .container .work-experience .box  p {
+#resume .container .work-experience .box {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
 
-  line-height: 1.4;
+#resume .container .work-experience .box .title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+#resume .container .work-experience .box .location {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#resume .container .work-experience .box .location strong {
+
+  font-weight: 500;
+}
+
+#resume .container .work-experience .box .duration {
   font-size: 16px;
-  color: var(--color1);
-  margin: 0px;
-  font-weight: 300;
+  font-weight: 400;
+  margin: 0;
+}
+#resume .container .education{
+  padding-top: 15px;
+border-top: 1px solid var(--color1);
 }
 
-#resume .container .work-experience .box .year-company
-{
-    min-width: 200px;
+#resume .container .education .box {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
 }
 
-
-
-#resume .container .work-experience .box .year-company h3
-{
-   
-font-size: 16px;
-    font-weight: 400;
+#resume .container .education .box .title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
-#resume .container .work-experience  .box .text h4
-{
-    text-transform: capitalize;
-    color: var(--color1);
-    font-size: 16px;
-    margin-bottom: 10px;
+#resume .container .education .box .location {
+  font-size: 18px;
+  font-weight: 400;
 }
 
-#resume .container .skills .skill-container{
-display: flex;
-gap: 20px;
-margin: 20px 0;
+#resume .container .education .box .location strong {
+
+  font-weight: 500;
 }
 
-#resume .container .skills .skill-container p{
+#resume .container .education .box .duration {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+#resume .container .skills{
+  padding-top: 15px;
+border-top: 1px solid var(--color1);
+}
+
+#resume .container .skills .skill-container {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+#resume .container .skills .skill-container p {
   padding: 5px;
   border: 1px solid var(--color1);
   border-radius: 5px;
   font-size: 12px;
-  font-weight: 400;
   margin: 0;
-  }
+}
+
 @media (max-width: 768px) {
   #resume .container .ongoing-project {
     flex-direction: column;
   }
+
   #resume .container .ongoing-project img {
     width: 100%;
   }
 
-  #resume .container .work-experience .box
-{
+  #resume .container .work-experience .box {
     flex-direction: column;
-}
+  }
 
-#resume .container .skills .skill-container{
-  display: flex;
- flex-wrap: wrap;
+  #resume .container .skills .skill-container {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
+
 #resume .container .ongoing-project img {
   border-radius: 8px;
 }

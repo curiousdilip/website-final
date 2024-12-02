@@ -23,7 +23,6 @@
   line-height: 1.6;
   font-size: 1.2rem;
   color: var(--color1);
-  font-weight: 300;
   margin-bottom: 10px;
 }
 #hero .container .info ul {
@@ -33,7 +32,6 @@
 #hero .container .info ul li {
   line-height: 1.6;
   font-size: 18px;
-  font-weight: 300;
 }
 #hero .container .info a {
   text-decoration: none;

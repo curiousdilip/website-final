@@ -2,10 +2,7 @@ footer {
   z-index: 888;
   background-color: var(--color2);
   padding: 20px 0;
-  /* position: fixed;
-  bottom: 0; */
   width: 100%;
-  /* right: 0; */
 }
 footer .footer {
   padding-inline: 1.5rem;
@@ -13,11 +10,11 @@ footer .footer {
   margin-inline: auto;
   text-align: center;
   display: grid;
-  gap: 42px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   place-items: center;
+  text-align: center;
 }
 footer .footer a {
-  font-size: 14px;
+  font-size: 30px;
   color: var(--color1) !important;
 }

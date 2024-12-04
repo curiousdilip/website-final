@@ -21,25 +21,40 @@
   padding-inline: 1.5rem;
   max-width: 800px;
   margin-inline: auto;
-  padding-block: 140px 180px;
+  padding-block: 180px 180px;
 
 }
 
 #error{
-  height: 95vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  padding: 24px;
+  text-align: center;
 }
 
 
 #error h1{
 color: var(--color1);
-font-size: 48px;
-line-height: 50px;
-text-transform: capitalize;
-margin-bottom: 20px;
+font-size: 3rem;
+line-height: 1.1;
 }
+#error  h2 {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  color: var(--color1);
+  margin: 10px 0;
+}
+
+#error p {
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: var(--color1);
+}
+
+
 
 @media (max-width:768px) {
 .container{

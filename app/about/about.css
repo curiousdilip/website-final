@@ -1,6 +1,6 @@
 #about .container {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 0px;
 }
 #about .container .about-heading {
   font-size: 48px;

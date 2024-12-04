@@ -9,29 +9,22 @@ export default function Footer() {
             target="_blank"
             href="https://github.com/curiousdilip"
           >
-            github
+            <i className="bi bi-github"></i>
           </a>
-          <a
-            aria-label="Twitter"
-            target="_blank"
-            href="https://twitter.com/curiousdilip"
-          >
-            {" "}
-            twitter
-          </a>
+
           <a
             aria-label="LinkedIn"
             target="_blank"
             href="https://www.linkedin.com/in/curiousdilip/"
           >
-            linkedin
+            <i className="bi bi-linkedin"></i>
           </a>
           <a
             aria-label="Email"
             target="_blank"
             href="mailto:curiousdilip@gmail.com"
           >
-            instagram
+            <i className="bi bi-envelope-at"></i>
           </a>
         </div>
       </footer>

@@ -1,10 +1,16 @@
 #hero {
   background-color: var(--color2);
   color: var(--color1);
-  height: 93vh;
+  height: 850px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+@media (max-width:768px) {
+  #hero {
+    height: 750px;
+  }
 }
 #hero .container .info h1 {
   font-size: 3rem;

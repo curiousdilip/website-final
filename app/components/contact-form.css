@@ -30,6 +30,7 @@ form textarea {
   border-radius: 5px;
 }
 form button {
+  cursor: pointer;
   padding: 10px 20px;
   border: 1px solid var(--color1);
   border-radius: 5px;

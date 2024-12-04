@@ -23,7 +23,6 @@ const ContactForm = ({ onFormSubmit }) => {
         setTimeout(() => {
           setFormSubmitted(false);
         }, 2000);
-        // Call the parent component's onFormSubmit function if provided
         if (onFormSubmit) {
           onFormSubmit();
         }
@@ -45,7 +44,7 @@ const ContactForm = ({ onFormSubmit }) => {
               type="text"
               id="name"
               name="name"
-              placeholder="Dilip Kumar Maurya"
+              placeholder="Your name"
               required
             />
           </div>
@@ -56,7 +55,7 @@ const ContactForm = ({ onFormSubmit }) => {
               type="email"
               id="email"
               name="email"
-              placeholder="curiousdilip@gmail.com"
+              placeholder="Enter your email"
               required
             />
           </div>
@@ -67,7 +66,7 @@ const ContactForm = ({ onFormSubmit }) => {
               type="tel"
               id="phone"
               name="phone"
-              placeholder="+91 12345 98765"
+              placeholder="Enter your phone number"
               required
             />
           </div>

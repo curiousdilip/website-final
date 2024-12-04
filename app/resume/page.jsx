@@ -3,40 +3,31 @@ import Projects from "../components/Projects";
 import "./resume.css";
 import Link from "next/link";
 export const metadata = {
-  title: "Resume | Dilip Kumar",
+  title: "Resume | Dilip Kumar Maurya",
   description:
     "Explore the professional resume of Dilip Kumar Maurya, a skilled Frontend Web Developer based in New Delhi, India. View my work experience, skills, and education.",
   keywords: "curiousdilip, web developer dilip",
   authors: [
     {
       name: "Dilip Kumar",
-      url: "https://www.dilipmaurya.in/uses",
+      url: "https://www.dilipmaurya.in",
     },
   ],
   openGraph: {
-    title: "Resume | Dilip Kumar",
+    title: "Resume | Dilip Kumar Maurya",
     description:
       "Explore the professional resume of Dilip Kumar Maurya, a skilled Frontend Web Developer based in New Delhi, India. View my work experience, skills, and education.",
-    url: "https://www.dilipmaurya.in/projects",
-    siteName: "Resume | Dilip Kumar",
-    images: [
-      {
-        url: "https://www.dilipmaurya.in/image.jpg",
-        width: 800,
-        height: 600,
-        alt: "Image description",
-      },
-    ],
+    url: "https://www.dilipmaurya.in/resume",
+    siteName: "Resume | Dilip Kumar Maurya",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     site: "@curiousdilip",
-    title: "Resume | Dilip Kumar",
+    title: "Resume | Dilip Kumar Maurya",
     description:
       "Explore the professional resume of Dilip Kumar Maurya, a skilled Frontend Web Developer based in New Delhi, India. View my work experience, skills, and education.",
-    image: "https://www.dilipmaurya.in/image.jpg",
   },
   robots: "index, follow",
 };

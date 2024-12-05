@@ -40,6 +40,9 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
+  icons: {
+    icon: "/favicon.svg",
+  },
   twitter: {
     card: "summary_large_image",
     site: "@curiousdilip",

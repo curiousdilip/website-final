@@ -44,7 +44,7 @@ export default function Uses() {
               alt="my Computer"
               width={750}
               height={340}
-              priority="true"
+              priority={true}
               layout="responsive"
             />
             <ul>
@@ -85,6 +85,7 @@ export default function Uses() {
               <a
                 href="https://github.com/curiousdilip/website2025"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 here
               </a>

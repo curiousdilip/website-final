@@ -23,9 +23,6 @@ export const metadata = {
       url: "https://www.dilipmaurya.in",
     },
   ],
-  icons: {
-    icon: "/favicon.svg",
-  },
   openGraph: {
     title: "Dilip Kumar | Frontend Web Developer",
     description:

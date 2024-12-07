@@ -53,7 +53,7 @@ export default function Home() {
             </p>
             <ul>
               <li>
-                <Link href="/work">
+                <Link href="/projects">
                   <i className="bi bi-laptop"></i> What I have Built?
                 </Link>
               </li>{" "}

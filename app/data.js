@@ -1,43 +1,50 @@
 export const timeline = [
   {
-    day: "16 August 2023",
+    day: "16th August 2024",
     description: "Got my second job at ",
     projectName: "Paramarsh",
     link: "http://www.paramarsh.com",
   },
   {
     day: "10th September 2023        ",
-    description: "Created First React Website for",
+    description: "Created first react website for",
     projectName: "Ramen Paul",
     link: "https://www.ramenpaul.com/",
   },
   {
     day: "14th April 2022        ",
-    description: "My First Government Project  ",
+    description: "My first government project  ",
     projectName: "Pradhanmantri Sangrahalaya",
     link: "https://www.pmsangrahalaya.gov.in/",
   },
   {
     day: "16th February 2022        ",
-    description: "Landed my First Job at ",
+    description: "Landed my first job at ",
     projectName: "Taknik Bharti",
     link: "https://www.taknikbharti.com/",
   },
   {
     day: "11th November 2021        ",
-    description: "My First International Project",
+    description: "My first international project",
     projectName: "MPAA",
     link: "https://mpaa.ac.uk/",
   },
   {
     day: "9th September 2019        ",
-    description: "My First Freelance Project",
+    description: "My first freelance project",
     projectName: "NLP Minerals Pvt. Ltd",
     link: "https://www.nlpminerals.com/",
   },
 ];
 
 export const projects = [
+  {
+    title: "Melvic Homes",
+    description: `Melvic, derived its name from Melbourne and Victoria. Founded in 2004 by Charanjit Singh, known as ‘CJ,’ we began by offering financial and loan services to clients.`,
+    imgSrc: "/projects/melvichomes.jpg",
+    href: "https://melvichomes.com.au/",
+    tech: ["Wordpress", "Elementor"],
+  },
   {
     title: "M Variety Beverages",
     description: `M Variety Enterprises in Kerala, India was started with a passion for innovation and quality, we introduced a unique range of products that would change the way people experience beverages.`,

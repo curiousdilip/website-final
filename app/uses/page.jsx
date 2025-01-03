@@ -1,5 +1,7 @@
 import Image from "next/image";
 import "./uses.css";
+import Heading from "../components/Heading";
+import Subheading from "../components/SubHeading";
 export const metadata = {
   title: "Uses | Dilip Kumar Maurya",
   description:
@@ -32,11 +34,12 @@ export default function Uses() {
     <>
       <section id="uses">
         <div className="container">
-          <h1 className="uses-heading">Uses</h1>
-          <p>
-            Below is the collection of tools and tech I rely on for development,
-            gaming, content creation, and daily tasks.
-          </p>
+          <Heading title=" Uses" />
+          <Subheading
+            description=" Below is the collection of tools and tech I rely on for development,
+            gaming, content creation, and daily tasks."
+          />
+
           <div className="my-pc">
             <h2>My computer</h2>
             <Image

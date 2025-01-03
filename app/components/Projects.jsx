@@ -1,13 +1,33 @@
 "use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import "./projects.css";
 import { projects } from "../data";
 export default function Projects() {
+  const projectVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (index) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: index * 0.2,
+        duration: 0.6,
+      },
+    }),
+  };
+
   return (
     <div className="projects">
       {projects.map((project, index) => (
-        <div className="project" key={index}>
+        <motion.div
+          className="project"
+          key={index}
+          variants={projectVariants}
+          initial="hidden"
+          animate="visible"
+          custom={index}
+        >
           <Image
             src={project.imgSrc}
             alt={project.title}
@@ -30,7 +50,7 @@ export default function Projects() {
               See Live &rarr;
             </Link>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );

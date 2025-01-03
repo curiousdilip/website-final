@@ -1,5 +1,6 @@
 import Link from "next/link";
 import "./page.css";
+import { motion } from "framer-motion";
 export const metadata = {
   title: "Dilip Kumar | Frontend Web Developer",
   description:
@@ -38,13 +39,24 @@ export const metadata = {
   },
   robots: "index, follow",
 };
+
 export default function Home() {
   return (
     <>
       <section id="hero">
         <div className="container">
           <div className="info">
-            <h1>Dilip Kumar Maurya</h1>
+            <motion.h1
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 1,
+                ease: "anticipate",
+              }}
+            >
+              Dilip Kumar Maurya
+            </motion.h1>
+            {/* <h1>Dilip Kumar Maurya</h1> */}
             <h2>Frontend Web Developer</h2>
             <p>
               Passionate about crafting stylish, modern websites, web services,

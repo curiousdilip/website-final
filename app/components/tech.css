@@ -1,0 +1,38 @@
+.tech-stack {
+  padding-top: 15px;
+  /* border-top: 1px solid var(--color1); */
+}
+
+.tech-stack p {
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 18px;
+  color: var(--color1);
+  margin: 10px 0;
+}
+
+.tech-stack ul {
+  margin: 20px 0;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 16px;
+  color: var(--color1);
+  padding-inline-start: 30px;
+}
+
+.tech-stack ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  margin: 5px 0;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 16px;
+  color: var(--color1);
+}
+.tech-stack ul li p {
+  margin: 0;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 16px;
+  color: var(--color1);
+}

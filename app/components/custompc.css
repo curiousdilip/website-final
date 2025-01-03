@@ -1,0 +1,29 @@
+.my-pc h2 {
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color1);
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+.my-pc ul {
+  margin: 20px 0;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 18px;
+  color: var(--color1);
+  font-weight: 400;
+  padding-inline-start: 30px;
+}
+
+.my-pc ul li {
+  margin: 0;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-size: 16px;
+  color: var(--color1);
+}
+
+.my-pc .macbook {
+  margin-top: 20px;
+}

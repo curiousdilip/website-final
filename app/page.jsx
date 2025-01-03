@@ -1,44 +1,45 @@
+"use client"
 import Link from "next/link";
 import "./page.css";
 import { motion } from "framer-motion";
-export const metadata = {
-  title: "Dilip Kumar | Frontend Web Developer",
-  description:
-    "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
-  keywords: "curiousdilip, web developer dilip",
-  authors: [
-    {
-      name: "Dilip Kumar",
-      url: "https://www.dilipmaurya.in",
-    },
-  ],
-  openGraph: {
-    title: "Dilip Kumar | Frontend Web Developer",
-    description:
-      "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
-    url: "https://www.dilipmaurya.in",
-    siteName: "Dilip Kumar | Frontend Web Developer",
-    images: [
-      {
-        url: "https://www.dilipmaurya.in/home-page.png",
-        width: 800,
-        height: 600,
-        alt: "home page",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@curiousdilip",
-    title: "Dilip Kumar | Frontend Web Developer",
-    description:
-      "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
-    image: "https://www.dilipmaurya.in/home-page.png",
-  },
-  robots: "index, follow",
-};
+// export const metadata = {
+//   title: "Dilip Kumar | Frontend Web Developer",
+//   description:
+//     "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
+//   keywords: "curiousdilip, web developer dilip",
+//   authors: [
+//     {
+//       name: "Dilip Kumar",
+//       url: "https://www.dilipmaurya.in",
+//     },
+//   ],
+//   openGraph: {
+//     title: "Dilip Kumar | Frontend Web Developer",
+//     description:
+//       "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
+//     url: "https://www.dilipmaurya.in",
+//     siteName: "Dilip Kumar | Frontend Web Developer",
+//     images: [
+//       {
+//         url: "https://www.dilipmaurya.in/home-page.png",
+//         width: 800,
+//         height: 600,
+//         alt: "home page",
+//       },
+//     ],
+//     locale: "en_US",
+//     type: "website",
+//   },
+//   twitter: {
+//     card: "summary_large_image",
+//     site: "@curiousdilip",
+//     title: "Dilip Kumar | Frontend Web Developer",
+//     description:
+//       "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
+//     image: "https://www.dilipmaurya.in/home-page.png",
+//   },
+//   robots: "index, follow",
+// };
 
 export default function Home() {
   return (
@@ -46,7 +47,7 @@ export default function Home() {
       <section id="hero">
         <div className="container">
           <div className="info">
-            <motion.h1
+            <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
@@ -54,9 +55,9 @@ export default function Home() {
                 ease: "anticipate",
               }}
             >
-              Dilip Kumar Maurya
-            </motion.h1>
-            {/* <h1>Dilip Kumar Maurya</h1> */}
+              <h1>Dilip Kumar Maurya</h1>
+            </motion.div>
+            
             <h2>Frontend Web Developer</h2>
             <p>
               Passionate about crafting stylish, modern websites, web services,

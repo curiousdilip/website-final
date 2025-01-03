@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import "./contact-form.css";
+import { motion } from "framer-motion";
 
 const ContactForm = ({ onFormSubmit }) => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -34,11 +35,36 @@ const ContactForm = ({ onFormSubmit }) => {
     }
   };
 
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.1,
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <>
       {!formSubmitted ? (
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
+        <motion.form
+          onSubmit={handleSubmit}
+          variants={container}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.div className="form-group" variants={item}>
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -47,9 +73,9 @@ const ContactForm = ({ onFormSubmit }) => {
               placeholder="Your name"
               required
             />
-          </div>
+          </motion.div>
 
-          <div className="form-group">
+          <motion.div className="form-group" variants={item}>
             <label htmlFor="email">Email</label>
             <input
               type="email"
@@ -58,9 +84,9 @@ const ContactForm = ({ onFormSubmit }) => {
               placeholder="Enter your email"
               required
             />
-          </div>
+          </motion.div>
 
-          <div className="form-group">
+          <motion.div className="form-group" variants={item}>
             <label htmlFor="phone">Phone number</label>
             <input
               type="tel"
@@ -69,9 +95,9 @@ const ContactForm = ({ onFormSubmit }) => {
               placeholder="Enter your phone number"
               required
             />
-          </div>
+          </motion.div>
 
-          <div className="form-group">
+          <motion.div className="form-group" variants={item}>
             <label htmlFor="message">Message</label>
             <textarea
               id="message"
@@ -80,12 +106,23 @@ const ContactForm = ({ onFormSubmit }) => {
               placeholder="I wanted to discuss that....."
               required
             ></textarea>
-          </div>
+          </motion.div>
 
-          <button type="submit">Send</button>
-        </form>
+          <motion.button variants={item} type="submit">
+            Send
+          </motion.button>
+        </motion.form>
       ) : (
-        <p>Thank you for submitting the form!</p>
+        <motion.p
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 1,
+            ease: "anticipate",
+          }}
+        >
+          Thank you for submitting the form!
+        </motion.p>
       )}
     </>
   );

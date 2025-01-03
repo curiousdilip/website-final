@@ -1,5 +1,7 @@
 import "./work.css";
 import Projects from "../components/Projects";
+import Heading from "../components/Heading";
+import Subheading from "../components/SubHeading";
 export const metadata = {
   title: "Projects | Dilip Kumar Maurya",
   description:
@@ -34,12 +36,12 @@ export default function Project() {
   return (
     <section id="work">
       <div className="container">
-        <h1 className="work-heading">Projects</h1>
-        <p>
-          Below you can find a selection of personal projects I've been working
+        <Heading title="Projects" />
+        <Subheading
+          description="Below you can find a selection of personal projects I've been working
           on recently. Here you can find some excerpts from my day-to-day
-          professional work.
-        </p>
+          professional work."
+        />
         <Projects />
       </div>
     </section>

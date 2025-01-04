@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import "./header.css";
 import Image from "next/image";
-
+// import logo from "/img/logo-white.svg";
 export default function Header() {
   const [isChecked, setIsChecked] = useState(false);
 
@@ -22,12 +22,13 @@ export default function Header() {
           <div className="nav-bar">
             <div className="logo">
               <Link href="/">
-                <img
+                <Image
                   src="/img/logo-white.svg"
                   alt="dilip kumar website logo"
-                  width="40px"
-                  height="40px"
+                  width={40}
+                  height={40}
                   aria-label="logo for my website"
+                  priority="intrinsic"
                 />
               </Link>
             </div>

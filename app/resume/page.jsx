@@ -1,7 +1,8 @@
 import Image from "next/image";
-import Projects from "../components/Projects";
 import "./resume.css";
 import Link from "next/link";
+import Heading from "../components/Heading";
+import Subheading from "../components/SubHeading";
 export const metadata = {
   title: "Resume | Dilip Kumar Maurya",
   description:
@@ -36,14 +37,15 @@ export default function Resume() {
     <>
       <section id="resume">
         <div className="container">
-          <h1 className="resume-heading">Resume</h1>
-          <p>
-            I am a Frontend Web Developer passionate about crafting stylish,
+          <Heading title="Resume" />
+
+          <Subheading
+            description="  I am a Frontend Web Developer passionate about crafting stylish,
             modern websites, web services, and online stores.With a keen eye for
             detail and a love for creating exceptional digital experiences, I
             specialize in designing and developing services that cater to the
-            unique needs of each client.
-          </p>
+            unique needs of each client."
+          />
           <a href="/contact">Say Hello!</a>
 
           <div className="ongoing-project">

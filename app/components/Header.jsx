@@ -3,7 +3,6 @@ import { useState } from "react";
 import Link from "next/link";
 import "./header.scss";
 import Image from "next/image";
-// import logo from "/img/logo-white.svg";
 export default function Header() {
   const [isChecked, setIsChecked] = useState(false);
 
@@ -12,7 +11,7 @@ export default function Header() {
   };
 
   const handleLinkClick = () => {
-    setIsChecked(false); // Uncheck the checkbox when a link is clicked
+    setIsChecked(false); 
   };
 
   return (

@@ -3,9 +3,11 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <h4>© 2025 Dilip. All rights reserved.</h4>
+        
         <div className="footer">
-          <a
+        <p>© 2025 Dilip. All rights reserved.</p>
+         <div className="social">
+         <a
             aria-label="Github"
             target="_blank"
             href="https://github.com/curiousdilip"
@@ -27,6 +29,7 @@ export default function Footer() {
           >
             <i className="bi bi-envelope-at"></i>
           </a>
+         </div>
         </div>
       </footer>
     </>

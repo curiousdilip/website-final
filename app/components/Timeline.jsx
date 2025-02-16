@@ -7,15 +7,15 @@ import "./timeline.css";
 import Link from "next/link";
 const TimeLine = () => {
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 }, // Initial state
+    hidden: { opacity: 0, y: 20 },
     visible: (index) => ({
       opacity: 1,
       y: 0,
       transition: {
-        delay: index * 0.2, // Delay for each item based on the index
+        delay: index * 0.2,
         duration: 0.5,
       },
-    }), // Visible state with animation
+    }),
   };
   return (
     <div>

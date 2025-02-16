@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "./uses.css";
+import "./uses.scss";
 import Heading from "../components/Heading";
 import Subheading from "../components/SubHeading";
 import MyComputerSetup from "../components/MyComputerSetup";

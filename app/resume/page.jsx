@@ -1,4 +1,4 @@
-import "./resume.css";
+import "./resume.scss";
 import Heading from "../components/Heading";
 import Subheading from "../components/SubHeading";
 import ResumeEl from "../components/resume";

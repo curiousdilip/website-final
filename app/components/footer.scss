@@ -1,0 +1,22 @@
+footer {
+  z-index: 888;
+  background-color: var(--color2);
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+
+  .footer {
+    padding: 1.5rem;
+    max-width: 400px;
+    margin-inline: auto;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    text-align: center;
+
+    a {
+      font-size: 20px;
+      color: var(--color1) !important;
+    }
+  }
+}

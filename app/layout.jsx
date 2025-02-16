@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./global.scss";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 import { Quicksand } from "next/font/google";

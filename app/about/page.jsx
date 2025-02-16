@@ -1,6 +1,6 @@
 import Link from "next/link";
 import TimeLine from "../components/Timeline";
-import "./about.css";
+import "./about.scss";
 import Heading from "../components/Heading";
 import Subheading from "../components/SubHeading";
 export const metadata = {

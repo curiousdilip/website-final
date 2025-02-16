@@ -1,5 +1,5 @@
 "use client";
-import "./custompc.css";
+import "./custompc.scss";
 import { motion } from "framer-motion";
 import { custompc } from "../data";
 import Image from "next/image";

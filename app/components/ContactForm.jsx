@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "./contact-form.css";
+import "./contact-form.scss";
 import { motion } from "framer-motion";
 
 const ContactForm = ({ onFormSubmit }) => {

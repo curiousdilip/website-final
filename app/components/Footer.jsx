@@ -1,8 +1,9 @@
-import "./footer.css";
+import "./footer.scss";
 export default function Footer() {
   return (
     <>
       <footer>
+        <h4>© 2025 Dilip. All rights reserved.</h4>
         <div className="footer">
           <a
             aria-label="Github"

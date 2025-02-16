@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import "./projects.css";
+import "./projects.scss";
 import { projects } from "../data";
 export default function Projects() {
   const projectVariants = {

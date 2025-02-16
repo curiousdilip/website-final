@@ -1,4 +1,4 @@
-import "./work.css";
+import "./work.scss";
 import Projects from "../components/Projects";
 import Heading from "../components/Heading";
 import Subheading from "../components/SubHeading";

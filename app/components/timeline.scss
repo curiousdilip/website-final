@@ -1,0 +1,32 @@
+.timeline {
+  li {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 24px;
+    border-left-width: 1px;
+    margin-left: 28px;
+    border-left: 1px solid #fff;
+    list-style: none;
+
+    &::before {
+      content: "";
+      width: 17px;
+      height: 17px;
+      background: #fff;
+      border: 1px solid #fff;
+      box-shadow: 3px 3px 0 #9e9e9e;
+      border-radius: 50%;
+      position: absolute;
+      left: -10px;
+      top: 0;
+    }
+
+    .day {
+      margin-bottom: 16px !important;
+    }
+
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+}

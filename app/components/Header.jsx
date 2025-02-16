@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import "./header.css";
+import "./header.scss";
 import Image from "next/image";
 // import logo from "/img/logo-white.svg";
 export default function Header() {
@@ -62,6 +62,11 @@ export default function Header() {
               <li>
                 <Link href="/contact" onClick={handleLinkClick}>
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link href="/resume" onClick={handleLinkClick}>
+                  resume
                 </Link>
               </li>
             </ul>

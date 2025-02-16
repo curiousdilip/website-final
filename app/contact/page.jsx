@@ -1,7 +1,7 @@
 import ContactForm from "../components/ContactForm";
 import Heading from "../components/Heading";
 import Subheading from "../components/SubHeading";
-import "./contact.css";
+import "./contact.scss";
 export const metadata = {
   title: "Contact | Dilip Kumar Maurya",
   description:

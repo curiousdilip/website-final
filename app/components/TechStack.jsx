@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { tech } from "../data";
-import "./tech.css";
+import "./tech.scss";
 export default function TechStack() {
   const container = {
     hidden: { opacity: 1, scale: 0 },

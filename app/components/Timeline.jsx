@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import React from "react";
 import { timeline } from "../data";
-import "./timeline.css";
+import "./timeline.scss";
 import Link from "next/link";
 const TimeLine = () => {
   const itemVariants = {

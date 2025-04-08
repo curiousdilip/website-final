@@ -11,7 +11,7 @@ export default function Header() {
   };
 
   const handleLinkClick = () => {
-    setIsChecked(false); 
+    setIsChecked(false);
   };
 
   return (
@@ -38,11 +38,6 @@ export default function Header() {
               onChange={handleMenuToggle}
             />
             <ul className="menu">
-              <li>
-                <Link href="/" onClick={handleLinkClick}>
-                  Home
-                </Link>
-              </li>
               <li>
                 <Link href="/about" onClick={handleLinkClick}>
                   About

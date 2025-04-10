@@ -28,13 +28,16 @@ export default function Projects() {
           animate="visible"
           custom={index}
         >
-          <Image
-            src={project.imgSrc}
-            alt={project.title}
-            width={400}
-            height={200}
-            priority="intrinsic"
-          />
+          {project.imgSrc.length > 0 && (
+            <Image
+              src={project.imgSrc[0]} // Access the first image
+              alt={project.title}
+              width={400}
+              height={200}
+              priority="intrinsic"
+              style={{ width: "100%", height: "auto" }}
+            />
+          )}
           <div className="details">
             <h2 className="p-title">{project.title}</h2>
             <p className="description">{project.description}</p>
@@ -46,8 +49,8 @@ export default function Projects() {
               </ul>
             )}
 
-            <Link className="p-link" href={project.href} target="blank">
-              See Live &rarr;
+            <Link className="p-link" href={`/projects/${project.slug}`}>
+              Know more &rarr;
             </Link>
           </div>
         </motion.div>

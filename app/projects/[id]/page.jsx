@@ -9,7 +9,9 @@ export async function generateStaticParams() {
 }
 
 const ProjectDetail = async ({ params }) => {
-  const project = projects.find((p) => p.slug === params.id);
+  const { id } = params || {}; // Ensure params is defined
+
+  const project = projects.find((p) => p.slug === id);
 
   if (!project) {
     return <div>Project not found</div>;

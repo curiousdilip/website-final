@@ -3,7 +3,7 @@ import Subheading from "@/app/components/SubHeading";
 import React from "react";
 import Heading from "@/app/components/Heading";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 const ProjectDetails = ({ project }) => {
   const detailVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -55,16 +55,24 @@ const ProjectDetails = ({ project }) => {
         </motion.h2>
       </div>
 
+
       <div className="project-images">
         {project.imgSrc.map((img, index) => (
-          <motion.img
+          <motion.div
             key={index}
-            src={img}
-            alt={`Screenshot of ${project.title} - ${index + 1}`}
             variants={detailVariants}
             initial="hidden"
             animate="visible"
-          />
+          >
+            <Image
+              src={img}
+              alt={`Screenshot of ${project.title} - ${index + 1}`}
+              width={800} 
+              height={500}
+              style={{ width: "100%", height: "auto" }}
+              priority={index === 0} 
+            />
+          </motion.div>
         ))}
       </div>
     </motion.div>

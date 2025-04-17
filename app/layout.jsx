@@ -3,6 +3,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 import { Quicksand } from "next/font/google";
 import Header from "./components/Header";
+import Header1 from "./components/Header1";
 import Footer from "./components/Footer";
 import Script from "next/script";
 
@@ -97,7 +98,8 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
 
-        <Header />
+        {/* <Header /> */}
+        <Header1 />
         {children}
         <Footer />
       </body>

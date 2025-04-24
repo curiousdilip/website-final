@@ -38,30 +38,7 @@ export const timeline = [
 ];
 
 export const projects = [
-  {
-    title: "Melvic Homes",
-    description: `Melvic, derived its name from Melbourne and Victoria. Founded in 2004 by Charanjit Singh, known as ‘CJ,’ we began by offering financial and loan services to clients.`,
-    imgSrc: ["/projects/melvichomes.jpg"],
-    href: "https://melvichomes.com.au/",
-    tech: ["Wordpress", "Elementor"],
-    slug: "melvic",
-    role: "Web Developer",
-    lang: "English",
-    year: "2024",
-  },
-  {
-    title: "M Variety Beverages",
-    description: `M Variety Enterprises in Kerala, India was started with a passion for innovation and quality, we introduced a unique range of products that would change the way people experience beverages.`,
-    imgSrc: "/projects/mvariety.jpg",
-    imgSrc: ["/projects/mvariety.jpg"],
-    href: "https://www.mvariety.in/",
-    tech: ["Wordpress", "Elementor"],
-    slug: "m-variety",
-    role: "Web Developer",
-    lang: "English",
-    year: "2024",
-  },
-  {
+{
     title: "Ramen Paul",
     description: `Trained in England (1993) France(1994) and U.S. (1995-98) Teaching music since last 15 years,authorized teacher of Trinity college, Rock school, Rock and Pop and Royal college, London. `,
     imgSrc: ["/projects/ramen.jpg"],
